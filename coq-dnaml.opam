@@ -1,0 +1,30 @@
+# This file was generated from `meta.yml`, please do not edit manually.
+# Follow the instructions on https://github.com/coq-community/templates to regenerate.
+
+opam-version: "2.0"
+maintainer: "palmskog@gmail.com"
+version: "dev"
+
+homepage: "https://github.com/CharlesAverill/dnaml"
+dev-repo: "git+https://github.com/CharlesAverill/dnaml.git"
+bug-reports: "https://github.com/CharlesAverill/dnaml/issues"
+doc: "https://CharlesAverill.github.io/dnaml/"
+license: "MIT"
+
+synopsis: "ML-style genetic programming"
+description: """
+An experimental formalization of ML-style genetic programming in Coq"""
+
+build: ["dune" "build" "-p" name "-j" jobs]
+depends: [
+  "dune" {>= "3.6"}
+  "coq" {(>= "8.19.1")}
+]
+
+tags: [
+  "keyword:genetic"
+  "logpath:dnaml"
+]
+authors: [
+  "Charles Averill"
+]
